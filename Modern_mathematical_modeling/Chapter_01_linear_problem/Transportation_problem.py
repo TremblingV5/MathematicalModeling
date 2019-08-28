@@ -54,7 +54,14 @@ if __name__ == '__main__':
     max_plant = [76, 88, 96, 40] # x
     max_cultivation = [42, 56, 44, 39, 60, 59] # y
     res = transportation_problem(costs, max_plant, max_cultivation)
-
-    print(f"最大值为{res['objective']}")
-    print('各变量的取值为：')
-    pprint(res['var'])
+    pprint(res)
+'''
+    The output of last line is::
+        {'objective': 284230.0,
+         'var': [[0.0, 0.0, 6.0, 39.0, 31.0, 0.0],
+                 [0.0, 0.0, 0.0, 0.0, 29.0, 59.0],
+                 [2.0, 56.0, 38.0, 0.0, 0.0, 0.0],
+                 [40.0, 0.0, 0.0, 0.0, 0.0, 0.0]]}
+                 
+    In this lines, objective means needed value, var means corresponding arguments
+'''
